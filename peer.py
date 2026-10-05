@@ -18,30 +18,44 @@ class Peer:
         self.stop = threading.Event()
         self.chunks = {}  # Example representation: {index: verified bytes}
         # TODO: create output/cache directories; verify any cached chunks.
+        
+
         # TODO: if --entire-file is provided, validate size and whole-file hash,
         # split it into chunks, and validate each chunk before making it available.
+        if "--entire-file" in self.args:
+
 
     def handle_request(self, request):
         # Server side (like the TCP server from the socket programming lecture): answer one neighbor's request.
         # TODO: validate op and file_id, then implement HAVE and GET_CHUNK.
         # HAVE reports only verified chunks; GET_CHUNK serves only such chunks.
         # Return the exact success/error schemas in PROTOCOL.md.
+        
+
         return error("BAD_REQUEST")
 
     def tracker_loop(self):
         # TODO: REGISTER now and every 5 seconds. Query PEERS repeatedly.
         # Do not register before the server socket is listening.
         # Catch timeouts and tracker outages; retry without stopping uploads.
+        
+
         raise NotImplementedError("Implement tracker registration and peer discovery")
 
     def download_loop(self):
         # Client side: request chunks from neighbors.
         # TODO: ask each neighbor HAVE, request missing chunks rarest first,
         # validate base64 + index + length + SHA-256, then store verified chunks.
+        
+
         # TODO: try another neighbor on timeout, bad data, or NO_CHUNK (churn).
         # If the tracker is down, keep using the neighbors you already know.
+        
+
         # TODO: assemble in index order and check the whole-file hash.
         # Keep the server running after completion; never prompt for input.
+        
+
         raise NotImplementedError("Implement verified chunk downloading")
 
 
