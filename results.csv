@@ -1,0 +1,7 @@
+mode,N,F_bytes,upload_kibps,distribution_time_s,per_peer_times_s,logs
+client-server,2,4194304,512,17.79,17.79 17.01,/tmp/experiment-x1604qbq
+p2p,2,4194304,512,14.95,14.95 14.95,/tmp/experiment-e4xbhqwg
+client-server,4,4194304,512,33.53,32.78 33.41 33.53 31.89,/tmp/experiment-89_et4e_
+p2p,4,4194304,512,21.48,20.58 20.70 20.45 21.48,/tmp/experiment-iz_07ko_
+client-server,8,4194304,512,66.29,64.26 63.25 65.65 66.16 66.29 65.78 65.53 63.88,/tmp/experiment-4goppm0x
+p2p,8,4194304,512,31.43,28.35 31.17 31.43 30.90 31.29 30.64 31.43 30.64,/tmp/experiment-nbeskxrk
