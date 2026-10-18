@@ -18,11 +18,12 @@ class Peer:
         self.stop = threading.Event()
         self.chunks = {}  # Example representation: {index: verified bytes}
         # TODO: create output/cache directories; verify any cached chunks.
-        
+        #<output-dir>/.chunks/<file_id>/<index>.chunk   
+        print(self.manifest[name])
 
         # TODO: if --entire-file is provided, validate size and whole-file hash,
         # split it into chunks, and validate each chunk before making it available.
-        if "--entire-file" in self.args:
+        #if "--entire-file" in self.args:
 
 
     def handle_request(self, request):

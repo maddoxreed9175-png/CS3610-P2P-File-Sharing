@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "demo.bin",
+  "size": 262400,
+  "chunk_size": 65536,
+  "file_id": "85e1298a87a2077b5de87c6ea60e77be9ceba06f955c51b73676ee5a71f1187f",
+  "chunk_hashes": [
+    "7daca2095d0438260fa849183dfc67faa459fdf4936e1bc91eec6b281b27e4c2",
+    "7daca2095d0438260fa849183dfc67faa459fdf4936e1bc91eec6b281b27e4c2",
+    "7daca2095d0438260fa849183dfc67faa459fdf4936e1bc91eec6b281b27e4c2",
+    "7daca2095d0438260fa849183dfc67faa459fdf4936e1bc91eec6b281b27e4c2",
+    "40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880"
+  ]
+}
